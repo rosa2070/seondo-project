@@ -1,49 +1,39 @@
 # :pushpin: goQuality
->고퀄리티 개발 컨텐츠 공유 서비스  
+>빅데이터 기반 한글 언어처리 검색 솔루션
 >https://go-quality.dev(데모링크)
 
 </br>
 
 ## 1. 제작 기간 & 참여 인원
-- 2019년 2월 18일 ~ 4월 5일
-- 개인 프로젝트
+- 2023년 7월 10일 ~ 8월 11일
+- 팀 프로젝트(5명)
 
 </br>
 
-## 2. 사용 기술
+## 2. 사용 기술 (버전 명시하기)
 #### `Back-end`
-  - Java 8
-  - Spring Boot 2.3
-  - Gradle
-  - Spring Data JPA
-  - QueryDSL
-  - H2
-  - MySQL 5.7
-  - Spring Security
-  - Jsoup
+  - Django
+  - Docker
 #### `Front-end`
-  - Vue.js 3.0
-  - Element UI
+  - Bootstrap
 
 </br>
 
-## 3. ERD 설계
+## 3. ERD 설계 (DB 테이블 설계)
 ![](https://zuminternet.github.io/images/portal/post/2019-04-22-ZUM-Pilot-integer/final_erd.png)
 
 
 ## 4. 핵심 기능
-이 서비스의 핵심 기능은 컨텐츠 등록 기능입니다.  
-사용자는 단지 컨텐츠의 카테고리를 선택하고, URL만 입력하면 끝입니다.  
-이 단순한 기능의 흐름을 보면, 서비스가 어떻게 동작하는지 알 수 있습니다.  
-
+이 서비스의 핵심 기능은 한국어 텍스트 데이터를 활용한 검색 솔루션 기능입니다.  
+세부적인 기능은 검색 후 유사도순으로 요약된 기사 출력, 연관 검색어 출력, 출력된 기사에 대한 긍/부정 출력 이렇게 3가지입니다. 이를 각각 문서유사도와 본문요약 모델, 연관어 추천 모델, 감성분석 모델을 활용해 구현하였습니다.
 <details>
 <summary><b>핵심 기능 설명 펼치기</b></summary>
 <div markdown="1">
 
-### 4.1. 전체 흐름
+### 4.1. 유사도순으로 요약된 기사 출력
 ![](https://zuminternet.github.io/images/portal/post/2019-04-22-ZUM-Pilot-integer/flow1.png)
 
-### 4.2. 사용자 요청
+### 4.2. 연관 검색어 출력
 ![](https://zuminternet.github.io/images/portal/post/2019-04-22-ZUM-Pilot-integer/flow_vue.png)
 
 - **URL 정규식 체크** :pushpin: [코드 확인](https://github.com/Integerous/goQuality/blob/b587bbff4dce02e3bec4f4787151a9b6fa326319/frontend/src/components/PostInput.vue#L67)
@@ -53,7 +43,7 @@
 - **Axios 비동기 요청** :pushpin: [코드 확인]()
   - URL의 모양새인 경우, 컨텐츠를 등록하는 POST 요청을 비동기로 날립니다.
 
-### 4.3. Controller
+### 4.3. 기사에 대한 긍/부정 출력
 
 ![](https://zuminternet.github.io/images/portal/post/2019-04-22-ZUM-Pilot-integer/flow_controller.png)
 
