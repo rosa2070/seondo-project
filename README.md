@@ -41,7 +41,12 @@
 
 ### 4.3. 각 기사에 대한 긍/부정 출력
 ![emotion](https://github.com/rosa2070/seondo-project/assets/46918839/9dc9fbfb-1fe0-4035-aa0c-d96566a8bc10)
+
+</div>
 </details>
+
+</br>
+
 
 ## 5. 핵심 트러블 슈팅
 ### 5.1. 연관어 추출 모델 변경
