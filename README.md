@@ -44,7 +44,7 @@
 
 ### 4.4 빠른 웹 구현을 위해 저장 모델 불러오기
 - hugging face에 있는 KoBART로 구현된 본문요약 모델 저장 후 불러오기
-- pushpin: [코드 확인](koBART텍스트요약.ipynb) 
+- pushpin: [코드 확인](hugging_face_모델_미리_저장.ipynb) 
 
 
 
