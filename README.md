@@ -45,7 +45,7 @@
 - **Axios 비동기 요청** :pushpin: [코드 확인]()
   - URL의 모양새인 경우, 컨텐츠를 등록하는 POST 요청을 비동기로 날립니다.
 
-### 4.3. 기사에 대한 긍/부정 출력
+### 4.3. 각 기사에 대한 긍/부정 출력
 ![emotion](https://github.com/rosa2070/seondo-project/assets/46918839/9dc9fbfb-1fe0-4035-aa0c-d96566a8bc10)
 
 
