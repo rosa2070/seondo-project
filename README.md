@@ -35,7 +35,8 @@
 ![summary](https://github.com/rosa2070/seondo-project/assets/46918839/0eb14256-c095-462b-bd19-650a0e755c9c)
 
 ### 4.2. 연관 검색어 출력
-![](https://zuminternet.github.io/images/portal/post/2019-04-22-ZUM-Pilot-integer/flow_vue.png)
+![associate](https://github.com/rosa2070/seondo-project/assets/46918839/a85ed3e3-af60-449c-914a-233c4ddcd63c)
+
 
 - **URL 정규식 체크** :pushpin: [코드 확인](https://github.com/Integerous/goQuality/blob/b587bbff4dce02e3bec4f4787151a9b6fa326319/frontend/src/components/PostInput.vue#L67)
   - Vue.js로 렌더링된 화면단에서, 사용자가 등록을 시도한 URL의 모양새를 정규식으로 확인합니다.
@@ -45,8 +46,8 @@
   - URL의 모양새인 경우, 컨텐츠를 등록하는 POST 요청을 비동기로 날립니다.
 
 ### 4.3. 기사에 대한 긍/부정 출력
+![emotion](https://github.com/rosa2070/seondo-project/assets/46918839/9dc9fbfb-1fe0-4035-aa0c-d96566a8bc10)
 
-![](https://zuminternet.github.io/images/portal/post/2019-04-22-ZUM-Pilot-integer/flow_controller.png)
 
 - **요청 처리** :pushpin: [코드 확인](https://github.com/Integerous/goQuality/blob/b2c5e60761b6308f14eebe98ccdb1949de6c4b99/src/main/java/goQuality/integerous/controller/PostRestController.java#L55)
   - Controller에서는 요청을 화면단에서 넘어온 요청을 받고, Service 계층에 로직 처리를 위임합니다.
