@@ -42,6 +42,11 @@
 ### 4.3. 각 기사에 대한 긍/부정 출력
 ![emotion](https://github.com/rosa2070/seondo-project/assets/46918839/9dc9fbfb-1fe0-4035-aa0c-d96566a8bc10)
 
+### 4.4 빠른 웹 구현을 위해 저장 모델 불러오기
+
+
+
+
 </div>
 </details>
 
