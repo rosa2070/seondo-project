@@ -31,7 +31,8 @@
 <div markdown="1">
 
 ### 4.1. 유사도순으로 요약된 기사 출력
-![](https://zuminternet.github.io/images/portal/post/2019-04-22-ZUM-Pilot-integer/flow1.png)
+- 인천서구 입력 시 
+![summary](https://github.com/rosa2070/seondo-project/assets/46918839/0eb14256-c095-462b-bd19-650a0e755c9c)
 
 ### 4.2. 연관 검색어 출력
 ![](https://zuminternet.github.io/images/portal/post/2019-04-22-ZUM-Pilot-integer/flow_vue.png)
