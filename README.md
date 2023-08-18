@@ -43,52 +43,12 @@
 ![emotion](https://github.com/rosa2070/seondo-project/assets/46918839/9dc9fbfb-1fe0-4035-aa0c-d96566a8bc10)
 
 
-- **요청 처리** :pushpin: [코드 확인](https://github.com/Integerous/goQuality/blob/b2c5e60761b6308f14eebe98ccdb1949de6c4b99/src/main/java/goQuality/integerous/controller/PostRestController.java#L55)
-  - Controller에서는 요청을 화면단에서 넘어온 요청을 받고, Service 계층에 로직 처리를 위임합니다.
-
-- **결과 응답** :pushpin: [코드 확인]()
-  - Service 계층에서 넘어온 로직 처리 결과(메세지)를 화면단에 응답해줍니다.
-
-### 4.4. Service
-
-![](https://zuminternet.github.io/images/portal/post/2019-04-22-ZUM-Pilot-integer/flow_service1.png)
-
-- **Http 프로토콜 추가 및 trim()** :pushpin: [코드 확인]()
-  - 사용자가 URL 입력 시 Http 프로토콜을 생략하거나 공백을 넣은 경우,  
-  올바른 URL이 될 수 있도록 Http 프로토콜을 추가해주고, 공백을 제거해줍니다.
-
-- **URL 접속 확인** :pushpin: [코드 확인]()
-  - 화면단에서 모양새만 확인한 URL이 실제 리소스로 연결되는지 HttpUrlConnection으로 테스트합니다.
-  - 이 때, 빠른 응답을 위해 Request Method를 GET이 아닌 HEAD를 사용했습니다.
-  - (HEAD 메소드는 GET 메소드의 응답 결과의 Body는 가져오지 않고, Header만 확인하기 때문에 GET 메소드에 비해 응답속도가 빠릅니다.)
-
-  ![](https://zuminternet.github.io/images/portal/post/2019-04-22-ZUM-Pilot-integer/flow_service2.png)
-
-- **Jsoup 이미지, 제목 파싱** :pushpin: [코드 확인]()
-  - URL 접속 확인결과 유효하면 Jsoup을 사용해서 입력된 URL의 이미지와 제목을 파싱합니다.
-  - 이미지는 Open Graphic Tag를 우선적으로 파싱하고, 없을 경우 첫 번째 이미지와 제목을 파싱합니다.
-  - 컨텐츠에 이미지가 없을 경우, 미리 설정해둔 기본 이미지를 사용하고, 제목이 없을 경우 생략합니다.
-
-
-### 4.5. Repository
-
-![](https://zuminternet.github.io/images/portal/post/2019-04-22-ZUM-Pilot-integer/flow_repo.png)
-
-- **컨텐츠 저장** :pushpin: [코드 확인]()
-  - URL 유효성 체크와 이미지, 제목 파싱이 끝난 컨텐츠는 DB에 저장합니다.
-  - 저장된 컨텐츠는 다시 Repository - Service - Controller를 거쳐 화면단에 송출됩니다.
-
-</div>
-</details>
-
-</br>
-
 ## 5. 핵심 트러블 슈팅
 ### 5.1. 연관어 추출 모델 변경
 - 처음에 연관어 추출 모델로 TF-IDF를 사용하려고 했습니다. TF-IDF의 경우 모델의 입력값으로 문서의 집합, 즉 뉴스 본문 데이터 전체가 들어가야 합니다.
 - 하지만 검색어 솔루션을 구현하기 위해서는 검색어를 입력값으로 받아 연관어를 추출해야 했기에 TF-IDF가 맞지 않는 모델이라고 판단하고 FastText 모델을 변경했습니다.
-- **모델 변경 전** : TF-IDF
-- **모델 변경 후** : FastText
+- **모델 변경 전** : TF-IDF :pushpin: [코드 확인](koBART텍스트요약.ipynb)
+- **모델 변경 후** : FastText :pushpin: [코드 확인](koBART텍스트요약.ipynb)
 
 
 ## 6. 그 외 트러블 슈팅
