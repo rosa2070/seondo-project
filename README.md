@@ -33,11 +33,11 @@
 ### 4.1. 유사도순으로 요약된 기사 출력 
 - 인천서구 입력 시 
 ![summary](https://github.com/rosa2070/seondo-project/assets/46918839/0eb14256-c095-462b-bd19-650a0e755c9c)
-- 요약 모델 : KoBART :pushpin: [코드 확인](koBART텍스트요약.ipynb)
+- **요약 모델** : KoBART :pushpin: [코드 확인](koBART텍스트요약.ipynb)
 
 ### 4.2. 연관 검색어 출력
 ![associate](https://github.com/rosa2070/seondo-project/assets/46918839/a85ed3e3-af60-449c-914a-233c4ddcd63c)
-- 연관어 추출 모델 : FastText :pushpin: [코드 확인](fasttext연관어추출.ipynb)
+- **연관어 추출 모델** : FastText :pushpin: [코드 확인](fasttext연관어추출.ipynb)
 
 ### 4.3. 각 기사에 대한 긍/부정 출력
 ![emotion](https://github.com/rosa2070/seondo-project/assets/46918839/9dc9fbfb-1fe0-4035-aa0c-d96566a8bc10)
