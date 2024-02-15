@@ -1,4 +1,4 @@
-# :pushpin: goQuality
+# :pushpin: KoreanSearch
 >빅데이터 기반 한글 언어처리 검색 솔루션
 >https://go-quality.dev(데모링크)
 
@@ -20,7 +20,6 @@
 </br>
 
 ## 3. ERD 설계 (DB 테이블 설계)
-![](https://zuminternet.github.io/images/portal/post/2019-04-22-ZUM-Pilot-integer/final_erd.png)
 
 
 ## 4. 핵심 기능
