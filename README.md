@@ -1,6 +1,5 @@
 # :pushpin: KoreanSearch
 >빅데이터 기반 한글 언어처리 검색 솔루션
->https://go-quality.dev(데모링크)
 
 </br>
 
